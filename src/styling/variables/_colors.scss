@@ -1,0 +1,18 @@
+// Global colors
+$mainBackgroundColor: #1c1c1c;
+$headerBackground: #d72638;
+$navigationBar: #a9a9a9;
+$sectionBackground: #2e2e2e;
+
+// Typography
+$mainTextColor: #ffffff;
+$navigationText: #1c1c1c;
+$sectionTitle: #ff3b3f;
+
+// links
+$linkHoverBackgroundColor: $mainBackgroundColor;
+$linkHoverTextColor: $navigationBar;
+
+// Cards
+$cardBackgroundColor: #3a3a3a;
+$cardBorderColor: solid 1px $navigationBar;

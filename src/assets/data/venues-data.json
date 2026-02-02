@@ -1,0 +1,164 @@
+{
+  "venues": [
+    {
+      "id": "venue_goldengirl",
+      "name": "The Golden Girl Rum Club",
+      "address": {
+        "street1": "137 Park Central Square",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "cocktail bar + kitchen",
+      "websiteLink": "https://www.thegoldengirl.com/",
+      "capacity": 120,
+      "riskScore": 2.2,
+      "timezone": "America/Chicago",
+      "amenities": ["food", "cocktails", "downtown square"]
+    },
+    {
+      "id": "venue_civilkitchen",
+      "name": "Civil Kitchen",
+      "address": {
+        "street1": "107 Park Central Sq",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "restaurant + bar",
+      "websiteLink": "https://www.civilkitchen.com/",
+      "capacity": 140,
+      "riskScore": 2.0,
+      "timezone": "America/Chicago",
+      "amenities": ["food", "full bar", "downtown square"]
+    },
+    {
+      "id": "venue_job",
+      "name": "The J.O.B. Public House",
+      "address": {
+        "street1": "319 E Walnut St",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "bourbon bar + food",
+      "websiteLink": "https://www.job417.com/",
+      "capacity": 160,
+      "riskScore": 2.6,
+      "timezone": "America/Chicago",
+      "amenities": ["food", "bourbon", "downtown"]
+    },
+    {
+      "id": "venue_dublinspass",
+      "name": "Dublin's Pass (Downtown)",
+      "address": {
+        "street1": "317 Park Central E",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "irish pub",
+      "websiteLink": "https://dublinspass.com/",
+      "capacity": 220,
+      "riskScore": 3.0,
+      "timezone": "America/Chicago",
+      "amenities": ["food", "beer", "late night"]
+    },
+    {
+      "id": "venue_bizarrebar",
+      "name": "Bizarre Bar (Downtown)",
+      "address": {
+        "street1": "300 Park Central E",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "bar + nightclub",
+      "websiteLink": "https://www.itsalldowntown.com/businesses/bizarre-bar/",
+      "capacity": 240,
+      "riskScore": 3.6,
+      "timezone": "America/Chicago",
+      "amenities": ["nightlife", "music", "events"]
+    },
+    {
+      "id": "venue_bigslice",
+      "name": "Big Slice Golf + Games (Downtown)",
+      "address": {
+        "street1": "301 Park Central E",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "entertainment bar",
+      "websiteLink": "https://bigslicegolfandgames.com/",
+      "capacity": 200,
+      "riskScore": 2.8,
+      "timezone": "America/Chicago",
+      "amenities": ["games", "golf simulators", "food"]
+    },
+    {
+      "id": "venue_comedyclub",
+      "name": "Springfield Comedy Club",
+      "address": {
+        "street1": "420 W College Street",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "comedy club",
+      "websiteLink": "https://www.comedyspringfield.com/",
+      "capacity": 180,
+      "riskScore": 2.4,
+      "timezone": "America/Chicago",
+      "amenities": ["shows", "bar", "events"]
+    },
+    {
+      "id": "venue_1984arcade",
+      "name": "1984 Arcade",
+      "address": {
+        "street1": "400 S Jefferson Ave",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "arcade bar",
+      "websiteLink": "https://www.1984arcade.com/",
+      "capacity": 130,
+      "riskScore": 2.5,
+      "timezone": "America/Chicago",
+      "amenities": ["arcade", "pinball", "bar"]
+    },
+    {
+      "id": "venue_gillioz",
+      "name": "Gillioz Theatre",
+      "address": {
+        "street1": "325 Park Central E",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "theatre venue",
+      "websiteLink": "https://gillioztheatre.com/",
+      "capacity": 600,
+      "riskScore": 1.8,
+      "timezone": "America/Chicago",
+      "amenities": ["stage", "events", "downtown"]
+    },
+    {
+      "id": "venue_vandivort",
+      "name": "Hotel Vandivort (Vantage / The Order)",
+      "address": {
+        "street1": "305 E Walnut St",
+        "city": "Springfield",
+        "state": "MO",
+        "zip": "65806"
+      },
+      "barType": "hotel bar + rooftop",
+      "websiteLink": "https://www.hotelvandivort.com/",
+      "capacity": 250,
+      "riskScore": 2.1,
+      "timezone": "America/Chicago",
+      "amenities": ["rooftop", "cocktails", "food"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+@use "styling/globals" as *;
+
+section {
+  margin: 1rem;
+}
+
+nav {
+  margin: $headerNavMargin;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}

@@ -1,0 +1,32 @@
+{
+  "ranks": [
+    {
+      "id": "rank_01",
+      "name": "Rookie",
+      "minPoints": 0,
+      "maxPoints": 99,
+      "icon": "🧢"
+    },
+    {
+      "id": "rank_02",
+      "name": "Player",
+      "minPoints": 100,
+      "maxPoints": 199,
+      "icon": "♠️"
+    },
+    {
+      "id": "rank_03",
+      "name": "Shark",
+      "minPoints": 200,
+      "maxPoints": 399,
+      "icon": "🦈"
+    },
+    {
+      "id": "rank_04",
+      "name": "Legend",
+      "minPoints": 400,
+      "maxPoints": 9999,
+      "icon": "🏆"
+    }
+  ]
+}

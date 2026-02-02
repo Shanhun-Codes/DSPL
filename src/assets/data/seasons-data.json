@@ -1,0 +1,18 @@
+{
+  "seasons": [
+    {
+      "id": "season_2026_winter",
+      "name": "Winter 2026",
+      "startDate": "2026-01-01T00:00:00-06:00",
+      "endDate": "2026-03-31T23:59:59-05:00",
+      "isActive": true
+    },
+    {
+      "id": "season_2026_spring",
+      "name": "Spring 2026",
+      "startDate": "2026-04-01T00:00:00-05:00",
+      "endDate": "2026-06-30T23:59:59-05:00",
+      "isActive": false
+    }
+  ]
+}

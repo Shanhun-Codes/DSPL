@@ -1,0 +1,13 @@
+<nav class="header-nav-container">
+  @for (navItem of navListItems; track navItem.label) {
+    @if (!isMobile()) {
+      <a [routerLink]="navItem.url" [fragment]="navItem.fragment">{{
+        navItem.label
+      }}</a>
+    } @else {
+      <a [routerLink]="navItem.mobileUrl" [fragment]="navItem.fragment">{{
+        navItem.label
+      }}</a>
+    }
+  }
+</nav>

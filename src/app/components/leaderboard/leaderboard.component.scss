@@ -1,0 +1,15 @@
+@use "styling/globals" as *;
+
+.leaderboard-card > * {
+  background-color: $cardBackgroundColor;
+}
+
+.leaderboard-card {
+  background-color: $cardBackgroundColor;
+  margin: $cardMargin;
+  border: $cardBorderColor;
+}
+
+.table-container {
+  margin: $cardMargin;
+}

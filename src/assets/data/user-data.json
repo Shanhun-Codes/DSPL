@@ -1,0 +1,491 @@
+[
+  {
+    "id": "user_001",
+    "username": "riverace",
+    "publicCode": "1842",
+    "email": "riverace@example.com",
+    "gender": "Male",
+    "createdAt": "2026-01-10T12:05:00-06:00",
+    "lastActiveAt": "2026-02-01T13:40:00-06:00",
+    "lifetimePoints": 160,
+    "seasonPoints": 160,
+    "lifetimeWinnings": 55,
+    "icon": "♠️",
+    "role": "player",
+    "isBanned": false,
+    "marketingOptIn": true,
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 1,
+      "lastCheckInAt": "2026-02-01T18:10:00-06:00",
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_dublinspass",
+      "top3Finishes": 1,
+      "lastEventId": "event_001"
+    }
+  },
+  {
+    "id": "user_002",
+    "username": "ozarkchip",
+    "publicCode": "2079",
+    "gender": "Female",
+    "createdAt": "2026-01-11T09:22:00-06:00",
+    "lastActiveAt": "2026-01-25T20:12:00-06:00",
+    "lifetimePoints": 90,
+    "seasonPoints": 90,
+    "lifetimeWinnings": 0,
+    "icon": "🎲",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "lastCheckInAt": "2026-01-25T18:00:00-06:00",
+      "currentStreakWeeks": 1,
+      "top3Finishes": 0
+    }
+  },
+  {
+    "id": "user_003",
+    "username": "queenofclubs",
+    "publicCode": "3195",
+    "gender": "Female",
+    "createdAt": "2026-01-08T18:10:00-06:00",
+    "lastActiveAt": "2026-01-30T21:08:00-06:00",
+    "lifetimePoints": 210,
+    "seasonPoints": 210,
+    "lifetimeWinnings": 120,
+    "icon": "♣️",
+    "activity": {
+      "totalEventsAttended": 3,
+      "totalWins": 1,
+      "lastCheckInAt": "2026-01-30T19:05:00-06:00",
+      "currentStreakWeeks": 3,
+      "favoriteVenueId": "venue_goldengirl",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_004",
+    "username": "foldnfun",
+    "publicCode": "4410",
+    "gender": "Male",
+    "createdAt": "2026-01-19T11:01:00-06:00",
+    "lifetimePoints": 40,
+    "seasonPoints": 40,
+    "icon": "🃏",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 0
+    }
+  },
+  {
+    "id": "user_005",
+    "username": "moxieblinds",
+    "publicCode": "5527",
+    "gender": "Non-binary",
+    "createdAt": "2026-01-21T16:44:00-06:00",
+    "lifetimePoints": 75,
+    "seasonPoints": 75,
+    "icon": "🔥",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 0
+    }
+  },
+
+  {
+    "id": "user_006",
+    "username": "downtowndonk",
+    "publicCode": "6013",
+    "createdAt": "2026-01-02T10:10:00-06:00",
+    "lifetimePoints": 130,
+    "seasonPoints": 130,
+    "lifetimeWinnings": 35,
+    "icon": "🂡",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_007",
+    "username": "walnutstreet",
+    "publicCode": "7148",
+    "createdAt": "2026-01-05T08:12:00-06:00",
+    "lifetimePoints": 25,
+    "seasonPoints": 25,
+    "icon": "🥤",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_008",
+    "username": "riverboatroy",
+    "publicCode": "8250",
+    "createdAt": "2026-01-06T21:09:00-06:00",
+    "lifetimePoints": 180,
+    "seasonPoints": 180,
+    "lifetimeWinnings": 80,
+    "icon": "🚤",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 1,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_009",
+    "username": "stackattack",
+    "publicCode": "9361",
+    "createdAt": "2026-01-07T15:45:00-06:00",
+    "lifetimePoints": 115,
+    "seasonPoints": 115,
+    "icon": "📈",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_010",
+    "username": "checkraisechad",
+    "publicCode": "1046",
+    "createdAt": "2026-01-09T13:30:00-06:00",
+    "lifetimePoints": 155,
+    "seasonPoints": 155,
+    "lifetimeWinnings": 25,
+    "icon": "✅",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+
+  {
+    "id": "user_011",
+    "username": "springfieldshuffler",
+    "publicCode": "1187",
+    "createdAt": "2026-01-12T17:02:00-06:00",
+    "lifetimePoints": 65,
+    "seasonPoints": 65,
+    "icon": "🔀",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_012",
+    "username": "parkcentralking",
+    "publicCode": "1299",
+    "createdAt": "2026-01-13T12:12:00-06:00",
+    "lifetimePoints": 95,
+    "seasonPoints": 95,
+    "icon": "👑",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_013",
+    "username": "riverqueen",
+    "publicCode": "1333",
+    "createdAt": "2026-01-14T19:24:00-06:00",
+    "lifetimePoints": 120,
+    "seasonPoints": 120,
+    "icon": "👑",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_014",
+    "username": "showmedown",
+    "publicCode": "1420",
+    "createdAt": "2026-01-15T09:54:00-06:00",
+    "lifetimePoints": 30,
+    "seasonPoints": 30,
+    "icon": "🙃",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_015",
+    "username": "bigblindben",
+    "publicCode": "1508",
+    "createdAt": "2026-01-16T14:07:00-06:00",
+    "lifetimePoints": 140,
+    "seasonPoints": 140,
+    "lifetimeWinnings": 60,
+    "icon": "🧱",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 1,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 2
+    }
+  },
+
+  {
+    "id": "user_016",
+    "username": "tablecaptain",
+    "publicCode": "1611",
+    "createdAt": "2026-01-17T18:29:00-06:00",
+    "lifetimePoints": 85,
+    "seasonPoints": 85,
+    "icon": "🧭",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_017",
+    "username": "chipwhisperer",
+    "publicCode": "1777",
+    "createdAt": "2026-01-18T22:10:00-06:00",
+    "lifetimePoints": 110,
+    "seasonPoints": 110,
+    "icon": "🗣️",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_018",
+    "username": "riverbend",
+    "publicCode": "1888",
+    "createdAt": "2026-01-20T10:41:00-06:00",
+    "lifetimePoints": 50,
+    "seasonPoints": 50,
+    "icon": "🌊",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_019",
+    "username": "lateNightLimp",
+    "publicCode": "1999",
+    "createdAt": "2026-01-22T23:03:00-06:00",
+    "lifetimePoints": 60,
+    "seasonPoints": 60,
+    "icon": "🌙",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_020",
+    "username": "walnutwalker",
+    "publicCode": "2066",
+    "createdAt": "2026-01-23T13:13:00-06:00",
+    "lifetimePoints": 70,
+    "seasonPoints": 70,
+    "icon": "🚶",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+
+  {
+    "id": "user_021",
+    "username": "arcadeace",
+    "publicCode": "2112",
+    "createdAt": "2026-01-24T11:32:00-06:00",
+    "lifetimePoints": 105,
+    "seasonPoints": 105,
+    "icon": "🕹️",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_1984arcade",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_022",
+    "username": "vantagevibes",
+    "publicCode": "2234",
+    "createdAt": "2026-01-25T18:09:00-06:00",
+    "lifetimePoints": 125,
+    "seasonPoints": 125,
+    "icon": "🌇",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_vandivort",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_023",
+    "username": "squarestack",
+    "publicCode": "2345",
+    "createdAt": "2026-01-26T09:49:00-06:00",
+    "lifetimePoints": 35,
+    "seasonPoints": 35,
+    "icon": "🧊",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_024",
+    "username": "gilliozgrit",
+    "publicCode": "2468",
+    "createdAt": "2026-01-27T15:15:00-06:00",
+    "lifetimePoints": 145,
+    "seasonPoints": 145,
+    "icon": "🎭",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 1,
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_gillioz",
+      "top3Finishes": 2
+    }
+  },
+  {
+    "id": "user_025",
+    "username": "comedystack",
+    "publicCode": "2501",
+    "createdAt": "2026-01-28T12:40:00-06:00",
+    "lifetimePoints": 80,
+    "seasonPoints": 80,
+    "icon": "😂",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "favoriteVenueId": "venue_comedyclub",
+      "top3Finishes": 1
+    }
+  },
+
+  {
+    "id": "user_026",
+    "username": "bigsliceputt",
+    "publicCode": "2666",
+    "createdAt": "2026-01-29T10:05:00-06:00",
+    "lifetimePoints": 55,
+    "seasonPoints": 55,
+    "icon": "⛳",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "favoriteVenueId": "venue_bigslice",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_027",
+    "username": "bizarrebluff",
+    "publicCode": "2770",
+    "createdAt": "2026-01-30T14:18:00-06:00",
+    "lifetimePoints": 100,
+    "seasonPoints": 100,
+    "icon": "🌀",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_bizarrebar",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_028",
+    "username": "irishin",
+    "publicCode": "2880",
+    "createdAt": "2026-01-31T08:57:00-06:00",
+    "lifetimePoints": 65,
+    "seasonPoints": 65,
+    "icon": "🍀",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "favoriteVenueId": "venue_dublinspass",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_029",
+    "username": "rumrunner",
+    "publicCode": "2991",
+    "createdAt": "2026-01-31T19:22:00-06:00",
+    "lifetimePoints": 115,
+    "seasonPoints": 115,
+    "icon": "🥃",
+    "activity": {
+      "totalEventsAttended": 2,
+      "totalWins": 0,
+      "currentStreakWeeks": 2,
+      "favoriteVenueId": "venue_goldengirl",
+      "top3Finishes": 1
+    }
+  },
+  {
+    "id": "user_030",
+    "username": "civilgrinder",
+    "publicCode": "3007",
+    "createdAt": "2026-02-01T09:01:00-06:00",
+    "lifetimePoints": 20,
+    "seasonPoints": 20,
+    "icon": "🛠️",
+    "activity": {
+      "totalEventsAttended": 1,
+      "totalWins": 0,
+      "currentStreakWeeks": 1,
+      "favoriteVenueId": "venue_civilkitchen",
+      "top3Finishes": 1
+    }
+  }
+]

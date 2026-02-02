@@ -1,0 +1,465 @@
+{
+  "eventParticipants": [
+    {
+      "id": "ep_001",
+      "eventId": "event_001",
+      "userId": "user_001",
+      "checkedInAt": "2026-02-01T18:10:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 30,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_002",
+      "eventId": "event_001",
+      "userId": "user_003",
+      "checkedInAt": "2026-02-01T18:12:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 20,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_003",
+      "eventId": "event_001",
+      "userId": "user_006",
+      "checkedInAt": "2026-02-01T18:18:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 25,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_004",
+      "eventId": "event_001",
+      "userId": "user_008",
+      "checkedInAt": "2026-02-01T18:22:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 35,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_005",
+      "eventId": "event_001",
+      "userId": "user_009",
+      "checkedInAt": "2026-02-01T18:25:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 15,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_006",
+      "eventId": "event_001",
+      "userId": "user_015",
+      "checkedInAt": "2026-02-01T18:29:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_007",
+      "eventId": "event_001",
+      "userId": "user_017",
+      "checkedInAt": "2026-02-01T18:31:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 10,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_008",
+      "eventId": "event_001",
+      "userId": "user_021",
+      "checkedInAt": "2026-02-01T18:34:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 20,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_009",
+      "eventId": "event_002",
+      "userId": "user_002",
+      "checkedInAt": "2026-03-07T18:35:00-06:00",
+      "isWinner": false,
+      "pointsAwarded": 0,
+      "notes": "Pre-registered",
+      "paymentStatus": "unpaid"
+    },
+    {
+      "id": "ep_010",
+      "eventId": "event_002",
+      "userId": "user_003",
+      "checkedInAt": "2026-03-07T18:40:00-06:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_011",
+      "eventId": "event_002",
+      "userId": "user_029",
+      "checkedInAt": "2026-03-07T18:42:00-06:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 90,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_012",
+      "eventId": "event_002",
+      "userId": "user_013",
+      "checkedInAt": "2026-03-07T18:50:00-06:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 20,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_013",
+      "eventId": "event_003",
+      "userId": "user_022",
+      "checkedInAt": "2026-03-21T18:20:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 0,
+      "notes": "Host list",
+      "paymentStatus": "comp"
+    },
+    {
+      "id": "ep_014",
+      "eventId": "event_003",
+      "userId": "user_015",
+      "checkedInAt": "2026-03-21T18:30:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 100,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_015",
+      "eventId": "event_003",
+      "userId": "user_010",
+      "checkedInAt": "2026-03-21T18:33:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 50,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_016",
+      "eventId": "event_003",
+      "userId": "user_001",
+      "checkedInAt": "2026-03-21T18:40:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 25,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_017",
+      "eventId": "event_004",
+      "userId": "user_021",
+      "checkedInAt": "2026-05-02T17:25:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 80,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_018",
+      "eventId": "event_004",
+      "userId": "user_025",
+      "checkedInAt": "2026-05-02T17:40:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 25,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_019",
+      "eventId": "event_004",
+      "userId": "user_007",
+      "checkedInAt": "2026-05-02T17:45:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_020",
+      "eventId": "event_004",
+      "userId": "user_020",
+      "checkedInAt": "2026-05-02T17:50:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 20,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_021",
+      "eventId": "event_005",
+      "userId": "user_025",
+      "checkedInAt": "2026-05-23T17:55:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 35,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_022",
+      "eventId": "event_005",
+      "userId": "user_006",
+      "checkedInAt": "2026-05-23T18:10:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 85,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_023",
+      "eventId": "event_005",
+      "userId": "user_012",
+      "checkedInAt": "2026-05-23T18:15:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 45,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_024",
+      "eventId": "event_005",
+      "userId": "user_018",
+      "checkedInAt": "2026-05-23T18:17:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 25,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_025",
+      "eventId": "event_006",
+      "userId": "user_026",
+      "checkedInAt": "2026-06-13T18:10:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 30,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_026",
+      "eventId": "event_006",
+      "userId": "user_027",
+      "checkedInAt": "2026-06-13T18:15:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 45,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_027",
+      "eventId": "event_006",
+      "userId": "user_009",
+      "checkedInAt": "2026-06-13T18:20:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 90,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_028",
+      "eventId": "event_006",
+      "userId": "user_004",
+      "checkedInAt": "2026-06-13T18:25:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 25,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_029",
+      "eventId": "event_007",
+      "userId": "user_030",
+      "checkedInAt": "2026-06-27T17:55:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 25,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_030",
+      "eventId": "event_007",
+      "userId": "user_002",
+      "checkedInAt": "2026-06-27T18:05:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 20,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_031",
+      "eventId": "event_007",
+      "userId": "user_014",
+      "checkedInAt": "2026-06-27T18:10:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_032",
+      "eventId": "event_007",
+      "userId": "user_011",
+      "checkedInAt": "2026-06-27T18:12:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 85,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_033",
+      "eventId": "event_008",
+      "userId": "user_010",
+      "checkedInAt": "2026-07-18T18:05:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_034",
+      "eventId": "event_008",
+      "userId": "user_022",
+      "checkedInAt": "2026-07-18T18:10:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 55,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_035",
+      "eventId": "event_008",
+      "userId": "user_003",
+      "checkedInAt": "2026-07-18T18:15:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 110,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_036",
+      "eventId": "event_008",
+      "userId": "user_019",
+      "checkedInAt": "2026-07-18T18:18:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 30,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_037",
+      "eventId": "event_009",
+      "userId": "user_027",
+      "checkedInAt": "2026-08-22T18:35:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 35,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_038",
+      "eventId": "event_009",
+      "userId": "user_028",
+      "checkedInAt": "2026-08-22T18:40:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 60,
+      "winningsAmount": 20,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_039",
+      "eventId": "event_009",
+      "userId": "user_001",
+      "checkedInAt": "2026-08-22T18:45:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 80,
+      "winningsAmount": 45,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_040",
+      "eventId": "event_009",
+      "userId": "user_008",
+      "checkedInAt": "2026-08-22T18:50:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 120,
+      "winningsAmount": 95,
+      "paymentStatus": "paid"
+    },
+
+    {
+      "id": "ep_041",
+      "eventId": "event_010",
+      "userId": "user_024",
+      "checkedInAt": "2026-10-10T17:00:00-05:00",
+      "isWinner": false,
+      "pointsAwarded": 40,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_042",
+      "eventId": "event_010",
+      "userId": "user_015",
+      "checkedInAt": "2026-10-10T17:05:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 2,
+      "pointsAwarded": 100,
+      "winningsAmount": 120,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_043",
+      "eventId": "event_010",
+      "userId": "user_003",
+      "checkedInAt": "2026-10-10T17:10:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 1,
+      "pointsAwarded": 150,
+      "winningsAmount": 200,
+      "paymentStatus": "paid"
+    },
+    {
+      "id": "ep_044",
+      "eventId": "event_010",
+      "userId": "user_006",
+      "checkedInAt": "2026-10-10T17:15:00-05:00",
+      "isWinner": true,
+      "winnerPlace": 3,
+      "pointsAwarded": 80,
+      "winningsAmount": 60,
+      "paymentStatus": "paid"
+    }
+  ]
+}

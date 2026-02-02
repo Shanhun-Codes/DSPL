@@ -1,0 +1,25 @@
+{
+  "milestones": [
+    {
+      "id": "ms_001",
+      "userId": "user_003",
+      "type": "FIRST_WIN",
+      "achievedAt": "2026-01-30T22:05:00-06:00",
+      "meta": { "eventId": "event_008" }
+    },
+    {
+      "id": "ms_002",
+      "userId": "user_015",
+      "type": "100_POINTS",
+      "achievedAt": "2026-02-01T20:30:00-06:00",
+      "meta": { "seasonId": "season_2026_winter" }
+    },
+    {
+      "id": "ms_003",
+      "userId": "user_021",
+      "type": "ARCADE_NIGHT_WIN",
+      "achievedAt": "2026-05-02T21:20:00-05:00",
+      "meta": { "eventId": "event_004" }
+    }
+  ]
+}
