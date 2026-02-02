@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './player.component.scss'
 })
 export class PlayerComponent {
-readonly u = input<any>()
+readonly d = input<any>()
 }

@@ -7,7 +7,7 @@ export type EventStatus = "scheduled" | "completed" | "settled" | "cancelled";
 export type WinnerPlace = 1 | 2 | 3;
 
 
-export interface User {
+export interface UserApiModel {
   id: string;
   username: string; // UNIQUE
   publicCode: string; // UNIQUE (used to store in phone for checker)

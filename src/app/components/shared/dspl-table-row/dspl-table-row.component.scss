@@ -1,0 +1,7 @@
+@use "styling/globals" as *;
+
+td {
+  text-align: center;
+  background-color: $cardBackgroundColor;
+  padding: .25em .5em;
+}

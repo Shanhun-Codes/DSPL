@@ -13,3 +13,10 @@
 .table-container {
   margin: $cardMargin;
 }
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin: $cardMargin;
+    font-size: $cardHeaderFontSize;
+}
