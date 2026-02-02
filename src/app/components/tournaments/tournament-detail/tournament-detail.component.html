@@ -1,0 +1,45 @@
+<!-- @switch (tournament()?.status) {
+  @case ("upcoming") {
+    <span class="status upcoming">Upcoming</span>
+  }
+  @case ("in_progress") {
+    <span class="status live">Live</span>
+  }
+  @case ("completed") {
+    <span class="status completed">Completed</span>
+  }
+}
+
+@if (tournament()) {
+  <h2>{{ tournament()!.name }}</h2>
+
+  <div class="meta">
+    <span>📍 {{ tournament()!.locationName }}</span>
+    <span>🕒 {{ tournament()!.durationEstimate }}</span>
+    <span
+      >💵
+      {{
+        tournament()!.entryType === "free"
+          ? "Free Entry"
+          : "$" + tournament()!.buyIn
+      }}</span
+    >
+  </div>
+
+  <div class="stats">
+    <div>
+      👥 {{ tournament()!.playerCount }} / {{ tournament()!.maxPlayers ?? "—" }}
+    </div>
+    <div>🏆 {{ tournament()!.prizeSummary }}</div>
+    <div>⏱ {{ tournament()!.blindStructure }}</div>
+  </div>
+
+  @if (tournament()!.yourResult) {
+    <div class="your-result">
+      You placed {{ tournament()?.yourResult?.place }} · +{{
+        tournament()?.yourResult?.pointsEarned
+      }}
+      pts
+    </div>
+  }
+} -->

@@ -1,12 +1,5 @@
-<section id="leaderboard" class="leaderboard-card">
-  @if (lbUsers.loading()) {
-    <p>Loading...</p> <!-- TODO: Reusable component-->
-  } @else if (lbUsers.error()) {
-    <p>Error: {{ lbUsers.error() }}</p> <!-- TODO: Reusable component-->
-  } @else {
-    <h3>Leaderboard</h3>
+<dspl-card-template [title]="title()!">
     <section class="table-container">
-      <dspl-table [dataService]="lbUsers" [tableHeaders]="tableHeaders" />
+      <dspl-table [rows]="tableRowData()" [tableHeaders]="tableHeaders" />
     </section>
-  }
-</section>
+</dspl-card-template>

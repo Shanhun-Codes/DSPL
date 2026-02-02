@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { DsplCardTemplateComponent } from '../shared/templates/dspl-card-template/dspl-card-template.component';
+
 
 @Component({
-  selector: 'app-tournaments',
+  selector: 'dspl-tournaments',
   standalone: true,
-  imports: [],
+  imports: [DsplCardTemplateComponent],
   templateUrl: './tournaments.component.html',
-  styleUrl: './tournaments.component.scss'
+  styleUrl: './tournaments.component.scss',
 })
 export class TournamentsComponent {
-
+  title = input<string>();
 }

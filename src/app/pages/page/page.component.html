@@ -9,10 +9,30 @@
     <body>
       <section class="body-container">
         <article class="left">
-          <dspl-leaderboard />
+          <dspl-leaderboard id="leaderboard" [title]="'Leaderboard'">
+            <ng-content
+              [isLoading]="isLoading()"
+              [error]="error()"
+            ></ng-content>
+          </dspl-leaderboard>
         </article>
-        <article class="middle"></article>
-        <article class="right"></article>
+        <article class="middle">
+        </article>
+        <article class="right">
+          <ng-content [isLoading]="isLoading()" [error]="error()"></ng-content>
+          <dspl-tournament-selector id="selector" [title]="'Up Coming'">
+            <ng-content
+              [isLoading]="isLoading()"
+              [error]="error()"
+            ></ng-content>
+          </dspl-tournament-selector>
+          <!-- <dspl-tournaments [title]="'About Us'">
+            <ng-content
+              [isLoading]="isLoading()"
+              [error]="error()"
+            ></ng-content>
+          </dspl-tournaments> -->
+        </article>
       </section>
     </body>
     <footer></footer>

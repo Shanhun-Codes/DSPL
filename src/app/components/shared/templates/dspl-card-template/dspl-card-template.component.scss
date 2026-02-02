@@ -1,0 +1,22 @@
+@use "styling/globals" as *;
+
+.card,
+header, .card-header > * {
+  background-color: $cardBackgroundColor;
+}
+
+.card {
+  background-color: $cardBackgroundColor;
+  margin: $cardMargin;
+  border: $cardBorderColor;
+}
+
+.table-container {
+  margin: $cardMargin;
+}
+
+h3 {
+  text-align: center;
+  margin: $cardMargin;
+  font-size: $cardHeaderFontSize;
+}

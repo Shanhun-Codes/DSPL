@@ -1,0 +1,95 @@
+[
+  {
+    "id": "tournament_2026_01_10",
+    "name": "Downtown Hold’em Night",
+    "status": "completed",
+    "venueId": "venue_goldengirl",
+    "startAt": "2026-01-10T19:00:00-06:00",
+    "endAt": "2026-01-10T22:05:00-06:00",
+    "buyIn": 20,
+    "playerCount": 23,
+    "maxPlayers": 24,
+    "prizePool": 460,
+    "prizeSummary": "Top 3 paid",
+    "blindStructure": "15 min blinds",
+    "hostName": "Mike",
+    "yourResult": {
+      "place": 2,
+      "pointsEarned": 120
+    }
+  },
+  {
+    "id": "tournament_2026_02_02",
+    "name": "Monday Night Freezeout",
+    "status": "in_progress",
+    "venueId": "venue_job",
+    "startAt": "2026-02-02T18:30:00-06:00",
+    "buyIn": 30,
+    "playerCount": 18,
+    "maxPlayers": 30,
+    "prizeSummary": "Winner takes all",
+    "blindStructure": "20 min blinds",
+    "hostName": "Sarah"
+  },
+  {
+    "id": "tournament_2026_02_05",
+    "name": "Square Side Freeroll",
+    "status": "upcoming",
+    "venueId": "venue_civilkitchen",
+    "startAt": "2026-02-05T18:00:00-06:00",
+    "playerCount": 0,
+    "maxPlayers": 40,
+    "prizeSummary": "Points only",
+    "blindStructure": "10 min blinds"
+  },
+  {
+    "id": "tournament_2026_02_08",
+    "name": "Sunday Night Turbo",
+    "status": "upcoming",
+    "venueId": "venue_dublinspass",
+    "startAt": "2026-02-08T20:00:00-06:00",
+    "buyIn": 25,
+    "playerCount": 12,
+    "maxPlayers": 24,
+    "prizeSummary": "Top 2 paid",
+    "blindStructure": "10 min blinds",
+    "hostName": "Chris"
+  },
+  {
+    "id": "tournament_2026_02_14",
+    "name": "Valentine’s Night Special",
+    "status": "upcoming",
+    "venueId": "venue_vandivort",
+    "startAt": "2026-02-14T19:30:00-06:00",
+    "buyIn": 40,
+    "playerCount": 8,
+    "maxPlayers": 18,
+    "prizeSummary": "Winner takes all",
+    "blindStructure": "15 min blinds",
+    "hostName": "Alex"
+  },
+  {
+    "id": "tournament_2026_02_21",
+    "name": "Arcade Poker Night",
+    "status": "upcoming",
+    "venueId": "venue_1984arcade",
+    "startAt": "2026-02-21T19:00:00-06:00",
+    "buyIn": 15,
+    "playerCount": 5,
+    "maxPlayers": 16,
+    "prizeSummary": "Top 3 paid",
+    "blindStructure": "12 min blinds"
+  },
+  {
+    "id": "tournament_2026_02_28",
+    "name": "Late Night Bizarre",
+    "status": "upcoming",
+    "venueId": "venue_bizarrebar",
+    "startAt": "2026-02-28T22:00:00-06:00",
+    "buyIn": 30,
+    "playerCount": 0,
+    "maxPlayers": 20,
+    "prizeSummary": "Winner takes all",
+    "blindStructure": "8 min blinds"
+  }
+]

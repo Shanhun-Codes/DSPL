@@ -8,9 +8,10 @@
       </tr>
     </thead>
     <tbody>
-      @for (d of dataService().leaderboard(); track d) {
-        <tr dspl-table-row class="dspl-row" [_d]="d"></tr>
-      }
+@for (r of rows(); track $index) {
+  <tr dspl-table-row [row]="r" [defs]="cellDefs()"></tr>
+}
+
     </tbody>
   </table>
 </section>

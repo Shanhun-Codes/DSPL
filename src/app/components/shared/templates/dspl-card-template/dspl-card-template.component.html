@@ -1,0 +1,14 @@
+<section class="card">
+  @if (loading()) {
+    <p>Loading...</p>
+  } @else if (error()) {
+    <p>Error: {{ error() }}</p>
+  } @else {
+    <header class="card-header">
+      <h3 class="card-title">{{ title() }}</h3>
+    </header>
+  }
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+</section>
