@@ -1,0 +1,29 @@
+<form [formGroup]="formGroup">
+  @for (form of config(); track form.id) {
+    @if (form.type === "text") {
+      <input
+        [formControlName]="form.id"
+        [type]="form.type"
+        [id]="form.id"
+        [autocomplete]="form.autocomplete ? form.id : null"
+        [placeholder]="form.placeholder"
+      />
+    }
+    @if (form.type === "submit") {
+      <button
+        (click)="form.click(formGroup); $event.preventDefault()"
+        [type]="form.type"
+      >
+        {{ form.label }}
+      </button>
+    }
+    @if (form.type === 'select'){
+        <select name="form.id" id="form.id">
+            <option value="1">Hello</option>
+        </select>
+    }
+    @if (form.type === "anchor") {
+      <a [href]="form.link" target="_blank">{{ form.label }}</a>
+    }
+  }
+</form>

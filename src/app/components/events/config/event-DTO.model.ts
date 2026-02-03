@@ -1,9 +1,9 @@
-export type TournamentStatus = 'completed' | 'in_progress' | 'upcoming';
+export type EventStatus = 'completed' | 'in_progress' | 'upcoming';
 
-export interface TournamentDto {
+export interface EventDto {
   id: string;
   name: string;
-  status: TournamentStatus;
+  status: EventStatus;
   venueId: string;
   startAt: string;              // ISO string from JSON
   endAt?: string;               // only present sometimes

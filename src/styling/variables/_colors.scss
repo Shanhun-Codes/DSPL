@@ -8,6 +8,8 @@ $sectionBackground: #2e2e2e;
 $mainTextColor: #ffffff;
 $navigationText: #1c1c1c;
 $sectionTitle: #ff3b3f;
+$linkColor: blue;
+
 
 // links
 $linkHoverBackgroundColor: $mainBackgroundColor;
@@ -17,3 +19,9 @@ $linkHoverTextColor: $navigationBar;
 $cardHeaderColor: $headerBackground;
 $cardBackgroundColor: #3a3a3a;
 $cardBorderColor: solid 1px $navigationBar;
+
+// validation 
+$inputPassedValidation: lightgreen;
+
+$buttonColor: $sectionTitle
+

@@ -1,15 +1,17 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { DataService } from '../../shared/services/data.service';
-import { TournamentsApiService } from '../../shared/services/api-services/tournaments-api.service';
+import { EventsApiService } from '../../shared/services/api-services/events-api.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class TournamentsService {
+export class EventsService {
   dataService = inject(DataService);
-  api = inject(TournamentsApiService);
+  api = inject(EventsApiService);
+  
   isLoading = this.dataService.loading;
   error = this.dataService.error;
+
   readonly tournaments = signal<any[]>([]);
   readonly selectedId = signal<string | null>(null);
   readonly tableRowData = computed(() => this.tournaments());
@@ -17,7 +19,7 @@ export class TournamentsService {
   load() {
     this.isLoading.set(true);
 
-    this.api.getTournaments().subscribe({
+    this.api.getEvents().subscribe({
       next: (list) => {
         this.tournaments.set(list);
         this.isLoading.set(false);

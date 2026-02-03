@@ -1,0 +1,5 @@
+@use 'styling/globals' as *;
+
+.input-container > * {
+background-color: $cardBackgroundColor;
+}

@@ -5,12 +5,11 @@ import { toLeaderboardRowDto } from './leaderboard.mapper';
 import { UsersApiService } from '../../shared/services/api-services/users-api.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 @Injectable({ providedIn: 'root' })
 export class LeaderboardService {
   private readonly usersData = inject(UsersApiService);
-
   readonly loading = this.usersData.loading;
   readonly error = this.usersData.error;
 

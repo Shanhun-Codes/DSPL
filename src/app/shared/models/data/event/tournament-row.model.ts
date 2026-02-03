@@ -1,6 +1,6 @@
-import { TournamentStatus } from "./tournament.model";
+import { EventStatus } from "./event-api.model";
 
-export interface TournamentRowVm {
+export interface EventRowVm {
   id: string;
 
   // line 1
@@ -10,7 +10,7 @@ export interface TournamentRowVm {
   subtitle: string;        // "Mon Feb 2 · 6:30 PM • venue_job"
 
   // compact chips / right aligned info
-  status: TournamentStatus;
+  status: EventStatus;
   buyInLabel: string;      // "$30" or "Free"
   playersLabel: string;    // "18/30"
   isFull: boolean;

@@ -1,7 +1,7 @@
-import { TournamentApiModel } from '../../../shared/models/data/tournament/tournament.model';
+import { EventApiModel } from '../../../shared/models/data/event/event-api.model';
 import { TableHeader } from '../../shared/models/table-header.model';
 
-export const TOURNAMENT_HEADER_CONFIG: readonly TableHeader<TournamentApiModel>[] = [
+export const EVENT_HEADER_CONFIG: readonly TableHeader<EventApiModel>[] = [
   { label: 'Date', key: 'startAt' },
   { label: 'Start', key: 'startAt' },
   { label: 'Venue', key: 'location' },

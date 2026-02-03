@@ -13,10 +13,29 @@ html, body {
     border: 0;
 }
 
+
+
 h1 {
     font-size: $mainTitleSize;
 }
 
 h3 {
     color: $cardHeaderColor;
+}
+
+input,
+select {
+  margin: 1em;
+  font-size: $mainTextSize;
+  border-radius: $borderRadius;
+  padding: $padding;
+  background-color: $navigationBar;
+}
+
+button {
+  background-color: $buttonColor;
+  border-radius: $borderRadius;
+  width: $buttonWidth;
+  padding: $padding;
+  height: $buttonHeight;
 }

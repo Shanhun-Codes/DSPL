@@ -3,13 +3,11 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { HeaderNavComponent } from '../../components/header-nav/header-nav.component';
 import { DeviceService } from '../../shared/services/device.service';
 import { LeaderboardComponent } from '../../components/leaderboard/leaderboard.component';
-import { TournamentsComponent } from '../../components/tournaments/tournaments.component';
 import { DataService } from '../../shared/services/data.service';
-import { TournamentComponent } from "../../components/tournaments/tournament-detail/tournament-detail.component";
-import { TournamentSelectorComponent } from "../../components/tournaments/tournament-selector/tournament-selector.component";
-import { DsplCardTemplateComponent } from "../../components/shared/templates/dspl-card-template/dspl-card-template.component";
-import { TournamentsApiService } from '../../shared/services/api-services/tournaments-api.service';
-import { TournamentsService } from '../../components/tournaments/tournaments.service';
+import { TABLE_TITLES_CONFIG } from './config/table-titles.config';
+import { RegisterForEventComponent } from "../../components/register-for-event/register-for-event.component";
+import { EventsService } from '../../components/events/events.service';
+import { EventSelectorComponent } from "../../components/events/event-selector/event-selector.component";
 
 @Component({
   selector: 'dspl-page',
@@ -18,7 +16,8 @@ import { TournamentsService } from '../../components/tournaments/tournaments.ser
     HeaderComponent,
     HeaderNavComponent,
     LeaderboardComponent,
-    TournamentSelectorComponent,
+    RegisterForEventComponent,
+    EventSelectorComponent
 ],
   templateUrl: './page.component.html',
   styleUrl: './page.component.scss',
@@ -29,10 +28,8 @@ export class PageComponent implements OnInit {
   isMobile = this.deviceService.isMobile;
   isLoading = this.dataService.loading;
   error = this.dataService.error;
-
-  tService = inject(TournamentsService)
-
-ngOnInit() {
-}
-
+  // make table titles config
+  tableTitles = TABLE_TITLES_CONFIG;
+  tService = inject(EventsService);
+  ngOnInit() {}
 }

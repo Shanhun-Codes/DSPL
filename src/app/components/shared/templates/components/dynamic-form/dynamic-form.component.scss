@@ -1,0 +1,27 @@
+@use "styling/globals" as *;
+
+input.ng-touched.ng-invalid {
+  border: 1px solid $headerBackground;
+}
+
+input.ng-touched.ng-valid {
+  border: 1px solid $inputPassedValidation;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: $smallTextSize;
+    color: $linkColor;
+}
+
+
+
+

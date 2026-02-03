@@ -1,7 +1,7 @@
-import { TournamentApiModel } from "../../../shared/models/data/tournament/tournament.model";
+import { EventApiModel } from "../../../shared/models/data/event/event-api.model";
 import { DsplCellDef } from "../../shared/templates/components/tables/dspl-table.types";
 
-export const TOURNAMENT_CELL_DEFS: readonly DsplCellDef<TournamentApiModel>[] = [
+export const EVENT_CELL_DEFS: readonly DsplCellDef<EventApiModel>[] = [
   // Date column (from startAt)
   {
     key: 'startAt',

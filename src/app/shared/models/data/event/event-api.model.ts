@@ -1,9 +1,9 @@
-export type TournamentStatus = 'upcoming' | 'in_progress' | 'completed';
+export type EventStatus = 'upcoming' | 'in_progress' | 'completed';
 
-export interface TournamentApiModel {
+export interface EventApiModel {
   id: string;
   name: string;
-  status: TournamentStatus;
+  status: EventStatus;
   startAt: string;   // ISO
   endAt?: string;    // ISO
   location: { id: string; name: string; city: string };

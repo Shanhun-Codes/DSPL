@@ -3,12 +3,12 @@ import { DsplCardTemplateComponent } from '../shared/templates/dspl-card-templat
 
 
 @Component({
-  selector: 'dspl-tournaments',
+  selector: 'dspl-events',
   standalone: true,
   imports: [DsplCardTemplateComponent],
-  templateUrl: './tournaments.component.html',
-  styleUrl: './tournaments.component.scss',
+  templateUrl: './events.component.html',
+  styleUrl: './events.component.scss',
 })
-export class TournamentsComponent {
+export class EventsComponent {
   title = input<string>();
 }

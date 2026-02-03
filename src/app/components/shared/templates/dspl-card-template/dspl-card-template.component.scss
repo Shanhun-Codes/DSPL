@@ -1,12 +1,10 @@
 @use "styling/globals" as *;
 
-.card,
-header, .card-header > * {
-  background-color: $cardBackgroundColor;
+form, select, option, button, a, h1, h3, table, thead, tbody, tr, td, header.card-header, .card{
+      background-color: $cardBackgroundColor;
 }
 
 .card {
-  background-color: $cardBackgroundColor;
   margin: $cardMargin;
   border: $cardBorderColor;
 }

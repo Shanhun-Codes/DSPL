@@ -4,12 +4,12 @@ import { Observable } from 'rxjs';
 import { DataService } from '../data.service';
 
 @Injectable({ providedIn: 'root' })
-export class TournamentsApiService {
+export class EventsApiService {
   private readonly http = inject(HttpClient);
   readonly dataService = inject(DataService)
   baseUrl = this.dataService.baseUrl
 
-  getTournaments(): Observable<any> {
+  getEvents(): Observable<any> {
     return this.http.get<any[]>(`${this.baseUrl()}/tournament-data.json`)
   }
 }
