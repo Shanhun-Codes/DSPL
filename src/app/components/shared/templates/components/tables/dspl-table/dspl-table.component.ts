@@ -39,7 +39,7 @@ export class DsplTableComponent<T extends Record<string, any>> {
 
     const afterClick = this.rfeService.selectedRowId
     console.log(afterClick());
-    
+    this.rfeService.showSelectedEventInOptionOnTableRowClick()
     
   }
 }

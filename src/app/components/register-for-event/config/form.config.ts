@@ -1,4 +1,4 @@
-import { FormFieldConfig } from '../../shared/templates/components/dynamic-form/models/dynamin-form.mode';
+import { FormFieldConfig } from '../../shared/templates/components/dynamic-form/models/dynamin-form.model';
 import { onRegistrationHandler } from '../register-for-event.component';
 
 export const REGISTER_FOR_EVENT_FORM_CONFIG: FormFieldConfig[] = [

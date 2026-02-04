@@ -1,5 +1,8 @@
 <dspl-card-template [title]="title()">
     <section class="input-container">
-        <dspl-dynamic-form [config]="formConfig()" />
+<dspl-dynamic-form
+  [config]="formConfig()"
+  [prefill]="{ selectedEvent: rfeService.showSelectedEventInOptionOnTableRowClick()?.id ?? null }">
+</dspl-dynamic-form>
     </section>
 </dspl-card-template>

@@ -1,20 +1,20 @@
-import { NgPlural } from '@angular/common';
-import { inject, Injectable, OnInit, signal } from '@angular/core';
-import { EventsService } from '../events/events.service';
+import { Injectable, OnInit, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class RegisterForEventService implements OnInit {
-  // eventService = inject(EventsService)
   selectedRowId = signal<string | null>(null);
-  // eventsInstorage = sessionStorage.getItem('downtown-springfield-poker-events');
-  // selectEventOptions = signal<any>(null)
+  eventsInstorage = sessionStorage.getItem('downtown-springfield-poker-events');
 
+  showSelectedEventInOptionOnTableRowClick() {
+    console.log("CLICKED FROM RFE SERVICE");
+    
+    if (!this.selectedRowId) return;
+    return JSON.parse(this.eventsInstorage!).find(
+      (e: any) => e.id === this.selectedRowId(),
+    );
+  }
 
-ngOnInit(): void {
-  // this.selectEventOptions.set(this.eventService.events())
-}
-
-
+  ngOnInit(): void {}
 }

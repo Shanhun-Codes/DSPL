@@ -31,8 +31,6 @@ export class EventSelectorComponent implements OnInit {
 
   readonly isClickable = this.tableService.isClickable
 
-  // @Output() select = new EventEmitter<string>(); // change this to the new output method
-
   ngOnInit(): void {
     this.eventSelectorService.load();
     this.tableService.isClickable.set(true)

@@ -5,7 +5,7 @@
         <option [ngValue]="null" disabled>
           {{ form.placeholder ?? "Select..." }}
         </option>
-        @for (option of form.options; track option.value) {
+        @for (option of form.options; track $index) {
           <option [value]="option.value">{{ option.label }}</option>
         }
       </select>
