@@ -1,5 +1,5 @@
-import { EventApiModel } from "../../../shared/models/data/event/event-api.model";
-import { DsplCellDef } from "../../shared/templates/components/tables/dspl-table.types";
+import { EventApiModel } from '../../../shared/models/data/event/event-api.model';
+import { DsplCellDef } from '../../shared/templates/components/tables/dspl-table.types';
 
 export const EVENT_CELL_DEFS: readonly DsplCellDef<EventApiModel>[] = [
   // Date column (from startAt)
@@ -39,4 +39,4 @@ export const EVENT_CELL_DEFS: readonly DsplCellDef<EventApiModel>[] = [
         : `${row.playerCount}`;
     },
   },
-] as const;
+]

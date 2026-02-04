@@ -6,4 +6,5 @@ export const EVENT_HEADER_CONFIG: readonly TableHeader<EventApiModel>[] = [
   { label: 'Start', key: 'startAt' },
   { label: 'Venue', key: 'location' },
   { label: 'Turnout', key: 'playerCount' },
-] as const;
+]
+

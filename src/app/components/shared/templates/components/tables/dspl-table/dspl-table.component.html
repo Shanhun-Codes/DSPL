@@ -8,10 +8,25 @@
       </tr>
     </thead>
     <tbody>
-@for (r of rows(); track $index) {
-  <tr dspl-table-row [row]="r" [defs]="cellDefs()"></tr>
-}
-
+      @for (r of rows(); track $index) {
+        @if (isClickable()) {
+          <tr
+            dspl-table-row
+            class="grow-row"
+            style="cursor: pointer"
+            [row]="r"
+            [defs]="cellDefs()"
+            (click)="onRowClick(r['id'])"
+          ></tr>
+        } @else {
+          <tr
+            class="grow-row"
+            dspl-table-row
+            [row]="r"
+            [defs]="cellDefs()"
+          ></tr>
+        }
+      }
     </tbody>
   </table>
 </section>

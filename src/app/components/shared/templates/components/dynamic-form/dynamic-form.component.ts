@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { FormConfig } from './models/dynamin-form.mode';
+import { FormFieldConfig } from './models/dynamin-form.mode';
 
 @Component({
   selector: 'dspl-dynamic-form',
@@ -15,14 +15,14 @@ import { FormConfig } from './models/dynamin-form.mode';
   styleUrl: './dynamic-form.component.scss',
 })
 export class DynamicFormComponent implements OnInit {
-  readonly config = input<FormConfig[]>();
+  readonly config = input<FormFieldConfig[]>();
 
   // Create empty group first
   formGroup = new FormGroup({});
 
   ngOnInit(): void {
     this.buildForm();
-    console.log(this.formGroup.controls); 
+    console.log(this.formGroup.controls);
   }
 
   private buildForm() {
@@ -31,10 +31,16 @@ export class DynamicFormComponent implements OnInit {
     cfg.forEach((fItem) => {
       if (!fItem.formGroup) return;
 
+      const validators = fItem.required ? [Validators.required] : [];
+
+      const initialValue = fItem.type === 'select' ? null : '';
+
       this.formGroup.addControl(
         fItem.id,
-        new FormControl('', fItem.required ? Validators.required : null),
+        new FormControl(initialValue, validators),
       );
+      console.log(this.formGroup);
+      
     });
   }
 }

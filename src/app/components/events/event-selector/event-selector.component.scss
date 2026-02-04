@@ -1,0 +1,26 @@
+@use "styling/globals" as *;
+
+.filter-container > * {
+  background-color: $cardBackgroundColor;
+}
+
+.filter-container {
+  background-color: $cardBackgroundColor;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.filter {
+  width: 100%;
+  text-align: center;
+  margin: $cardMargin;
+  padding: $cardNavPadding;
+}
+
+.filter:hover {
+    cursor: pointer;
+    background-color: $mainBackgroundColor;
+    text-decoration: underline;
+    border-radius: $borderRadius;
+}

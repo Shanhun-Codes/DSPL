@@ -8,44 +8,46 @@
     </header>
     <body>
       <section class="body-container">
-        <article class="left">
-          <dspl-leaderboard id="leaderboard" [title]="tableTitles[0].label">
-            <ng-content
-              [isLoading]="isLoading()"
-              [error]="error()"
-            ></ng-content>
-          </dspl-leaderboard>
-        </article>
-        <article class="middle">
-          <article class="middle-top">
-            <dspl-register-for-event [title]="tableTitles[2].label">
+        <section class="three-grid-section">
+          <article class="left">
+            <dspl-leaderboard id="leaderboard" [title]="tableTitles[0].label">
               <ng-content
                 [isLoading]="isLoading()"
                 [error]="error()"
               ></ng-content>
-            </dspl-register-for-event>
+            </dspl-leaderboard>
           </article>
-          <article class="middle-bottom">
-            <dspl-event-selector
-              id="selector"
-              [title]="tableTitles[1].label"
-            >
+          <article class="middle">
+            <article class="middle-top">
+              <dspl-register-for-event [title]="tableTitles[2].label">
+                <ng-content
+                  [isLoading]="isLoading()"
+                  [error]="error()"
+                ></ng-content>
+              </dspl-register-for-event>
+            </article>
+            <article class="middle-bottom">
+              <dspl-event-selector
+                id="selector"
+                [title]="tableTitles[1].label"
+              >
+                <ng-content
+                  [isLoading]="isLoading()"
+                  [error]="error()"
+                ></ng-content>
+              </dspl-event-selector>
+            </article>
+          </article>
+          <article class="right">
+            <!-- <dspl-tournaments [title]="'About Us'">
               <ng-content
                 [isLoading]="isLoading()"
                 [error]="error()"
               ></ng-content>
-            </dspl-event-selector>
+            </dspl-tournaments> -->
           </article>
-        </article>
-        <article class="right">
-          <!-- <dspl-tournaments [title]="'About Us'">
-            <ng-content
-              [isLoading]="isLoading()"
-              [error]="error()"
-            ></ng-content>
-          </dspl-tournaments> -->
-        </article>
-      </section>
+        </section>
+        </section>
     </body>
     <footer></footer>
   </section>

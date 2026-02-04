@@ -9,6 +9,10 @@ form, select, option, button, a, h1, h3, table, thead, tbody, tr, td, header.car
   border: $cardBorderColor;
 }
 
+.card-header {
+  border-bottom: $cardBorderColor;
+}
+
 .table-container {
   margin: $cardMargin;
 }

@@ -1,5 +1,15 @@
 <form [formGroup]="formGroup">
   @for (form of config(); track form.id) {
+    @if (form.type === "select") {
+      <select [formControlName]="form.id" [required]="form.required!" [name]="form.id" [id]="form.id">
+        <option [ngValue]="null" disabled>
+          {{ form.placeholder ?? "Select..." }}
+        </option>
+        @for (option of form.options; track option.value) {
+          <option [value]="option.value">{{ option.label }}</option>
+        }
+      </select>
+    }
     @if (form.type === "text") {
       <input
         [formControlName]="form.id"
@@ -10,17 +20,9 @@
       />
     }
     @if (form.type === "submit") {
-      <button
-        (click)="form.click(formGroup); $event.preventDefault()"
-        [type]="form.type"
-      >
+      <button type="button" (click)="form.click?.(formGroup)">
         {{ form.label }}
       </button>
-    }
-    @if (form.type === 'select'){
-        <select name="form.id" id="form.id">
-            <option value="1">Hello</option>
-        </select>
     }
     @if (form.type === "anchor") {
       <a [href]="form.link" target="_blank">{{ form.label }}</a>

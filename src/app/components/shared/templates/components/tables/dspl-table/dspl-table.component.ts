@@ -1,8 +1,9 @@
-import { Component, computed, input, OnInit } from '@angular/core';
+import { Component, computed, inject, input, output } from '@angular/core';
 import { DsplTableRowComponent } from '../dspl-table-row/dspl-table-row.component';
 import { DsplCellDef } from '../dspl-table.types';
 import { TableHeader } from '../../../../models/table-header.model';
-
+import { TablesService } from '../../../tables.service';
+import { RegisterForEventService } from '../../../../../register-for-event/register-for-event.service';
 
 @Component({
   selector: 'dspl-table',
@@ -14,16 +15,31 @@ import { TableHeader } from '../../../../models/table-header.model';
 })
 export class DsplTableComponent<T extends Record<string, any>> {
   readonly defs = input<readonly DsplCellDef<T>[] | null>(null);
-  // what you already have (probably)
+  readonly tableService = inject(TablesService)
+  readonly rfeService = inject(RegisterForEventService)
+  readonly isClickable = this.tableService.isClickable
+  
   readonly tableHeaders = input.required<readonly TableHeader<T>[]>();
-
-  // your row data input
+  
   readonly rows = input.required<readonly T[]>();
+  
+  readonly cellDefs = computed<readonly DsplCellDef<T>[]>(() => {
+    const provided = this.defs();
+    if (provided && provided.length) return provided;
+    return this.tableHeaders().map((h) => ({ key: h.key }));
+  });
 
-readonly cellDefs = computed<readonly DsplCellDef<T>[]>(() => {
-  const provided = this.defs();
-  if (provided && provided.length) return provided;
+  readonly rowClicked = output()
 
-  return this.tableHeaders().map((h) => ({ key: h.key }));
-});
+  onRowClick(id: string){
+    const beforeClick = this.rfeService.selectedRowId
+    console.log(beforeClick());
+    
+    this.rfeService.selectedRowId.set(id)
+
+    const afterClick = this.rfeService.selectedRowId
+    console.log(afterClick());
+    
+    
+  }
 }

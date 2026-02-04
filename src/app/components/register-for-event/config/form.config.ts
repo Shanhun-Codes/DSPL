@@ -1,7 +1,7 @@
-import { FormConfig } from '../../shared/templates/components/dynamic-form/models/dynamin-form.mode';
+import { FormFieldConfig } from '../../shared/templates/components/dynamic-form/models/dynamin-form.mode';
 import { onRegistrationHandler } from '../register-for-event.component';
 
-export const REGISTER_FOR_EVENT_FORM_CONFIG: FormConfig[] = [
+export const REGISTER_FOR_EVENT_FORM_CONFIG: FormFieldConfig[] = [
   {
     id: 'selectedEvent',
     order: 1,
@@ -11,6 +11,7 @@ export const REGISTER_FOR_EVENT_FORM_CONFIG: FormConfig[] = [
     placeholder: 'Select an Event',
     required: true,
     formGroup: true,
+    options: []
   },
   {
     id: 'username',

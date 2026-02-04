@@ -24,3 +24,7 @@ th {
 tr {
   outline: $cardBorderColor;
 }
+
+tr.grow-row:hover {
+  transform: scale(1.1);
+}

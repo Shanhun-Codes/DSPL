@@ -1,9 +1,15 @@
 <dspl-card-template [title]="title()">
+  <div class="filter-container">
+    <h4 (click)="filter('PAST')" class="filter">PAST</h4>
+    <h4 (click)="filter('ALL')" class="filter">ALL</h4>
+    <h4 (click)="filter('FUTURE')" class="filter">FUTURE</h4>
+  </div>
   <section class="table-container">
     <dspl-table
       [tableHeaders]="tableHeaders"
       [rows]="events()"
       [defs]="defs"
+      (rowClicked)="handleRowClick($event)"
     >
     </dspl-table>
   </section>
