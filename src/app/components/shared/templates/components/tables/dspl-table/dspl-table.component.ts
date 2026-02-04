@@ -15,31 +15,39 @@ import { RegisterForEventService } from '../../../../../register-for-event/regis
 })
 export class DsplTableComponent<T extends Record<string, any>> {
   readonly defs = input<readonly DsplCellDef<T>[] | null>(null);
-  readonly tableService = inject(TablesService)
-  readonly rfeService = inject(RegisterForEventService)
-  readonly isClickable = this.tableService.isClickable
-  
+
+  readonly canRowClick = input<(row: T) => boolean>(() => true);
+
+  readonly tableService = inject(TablesService);
+  readonly rfeService = inject(RegisterForEventService);
+
+  readonly isClickable = this.tableService.isClickable;
+
   readonly tableHeaders = input.required<readonly TableHeader<T>[]>();
-  
   readonly rows = input.required<readonly T[]>();
-  
+
   readonly cellDefs = computed<readonly DsplCellDef<T>[]>(() => {
     const provided = this.defs();
     if (provided && provided.length) return provided;
     return this.tableHeaders().map((h) => ({ key: h.key }));
   });
 
-  readonly rowClicked = output()
+  readonly rowClicked = output<string>();
 
-  onRowClick(id: string){
-    const beforeClick = this.rfeService.selectedRowId
-    console.log(beforeClick());
-    
-    this.rfeService.selectedRowId.set(id)
+  rowIsClickable(row: T): boolean {
+    return this.isClickable() && this.canRowClick()(row);
+  }
 
-    const afterClick = this.rfeService.selectedRowId
-    console.log(afterClick());
-    this.rfeService.showSelectedEventInOptionOnTableRowClick()
-    
+  onRowClick(row: T) {
+    if (!this.rowIsClickable(row)) return;
+
+    const id = (row as any)['id'] as string;
+    this.rfeService.selectedRowId.set(id);
+
+    // ✅ actually call the function (you were missing ())
+    const selected = this.rfeService.showSelectedEventInOptionOnTableRowClick();
+    console.log('selected event', selected);
+
+    this.rowClicked.emit(id);
   }
 }

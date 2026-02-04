@@ -7,25 +7,17 @@
         }
       </tr>
     </thead>
+
     <tbody>
       @for (r of rows(); track $index) {
-        @if (isClickable()) {
-          <tr
-            dspl-table-row
-            class="grow-row"
-            style="cursor: pointer"
-            [row]="r"
-            [defs]="cellDefs()"
-            (click)="onRowClick(r['id'])"
-          ></tr>
-        } @else {
-          <tr
-            class="grow-row"
-            dspl-table-row
-            [row]="r"
-            [defs]="cellDefs()"
-          ></tr>
-        }
+        <tr
+          dspl-table-row
+          [class.grow-row]="rowIsClickable(r)"
+          [style.cursor]="rowIsClickable(r) ? 'pointer' : 'default'"
+          [row]="r"
+          [defs]="cellDefs()"
+          (click)="onRowClick(r)"
+        ></tr>
       }
     </tbody>
   </table>

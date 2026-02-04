@@ -25,6 +25,11 @@ tr {
   outline: $cardBorderColor;
 }
 
-tr.grow-row:hover {
-  transform: scale(1.1);
+.grow-row {
+  transition: transform 120ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
+

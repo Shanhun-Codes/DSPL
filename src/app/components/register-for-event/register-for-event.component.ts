@@ -4,8 +4,8 @@ import { EventsService } from '../events/events.service';
 import { DsplCardTemplateComponent } from '../shared/templates/dspl-card-template/dspl-card-template.component';
 import { DynamicFormComponent } from '../shared/templates/components/dynamic-form/dynamic-form.component';
 import { FormGroup } from '@angular/forms';
-import { FormFieldConfig } from '../shared/templates/components/dynamic-form/models/dynamin-form.model';
 import { RegisterForEventService } from './register-for-event.service';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'dspl-register-for-event',
@@ -19,35 +19,38 @@ export class RegisterForEventComponent implements OnInit {
   readonly eventService = inject(EventsService);
   readonly rfeService = inject(RegisterForEventService);
 
-readonly selectOptions = computed(() => {
-  const now = new Date();
+  readonly selectOptions = computed(() => {
+    const now = DateTime.local();
 
-  const future = this.eventService.events()
-    .filter(e => new Date(e.startAt ?? e.date ?? e.startsAt) > now)
-    .map(e => ({ label: e.name, value: e.id }));
+    const future = this.eventService
+      .staleEvents()
+      .filter((e) => {
+        const raw = e.startAt ?? e.date ?? e.startsAt;
+        if (!raw) return false;
 
-  const selected = this.rfeService.showSelectedEventInOptionOnTableRowClick(); // ✅ read signal value
+        const dt = DateTime.fromISO(raw, { setZone: true });
+        return dt.isValid && dt > now;
+      })
+      .map((e) => ({ label: e.name, value: e.id }));
 
-  // ✅ if no selected event, just show future events
-  if (!selected) return future;
+    const selected = this.rfeService.showSelectedEventInOptionOnTableRowClick();
+    if (!selected) return future;
 
-  const selectedOpt = { label: selected.name, value: selected.id };
+    const selectedOpt = { label: selected.name, value: selected.id };
 
-  // ✅ always return an array; include selected first (and avoid duplicates)
-  return [
-    selectedOpt,
-    ...future.filter(o => o.value !== selectedOpt.value),
-  ];
-});
+    return [
+      selectedOpt,
+      ...future.filter((o) => o.value !== selectedOpt.value),
+    ];
+  });
 
-readonly formConfig = computed(() =>
-  REGISTER_FOR_EVENT_FORM_CONFIG.map(field =>
-    field.id === 'selectedEvent'
-      ? { ...field, options: this.selectOptions() }
-      : field
-  )
-);
-
+  readonly formConfig = computed(() =>
+    REGISTER_FOR_EVENT_FORM_CONFIG.map((field) =>
+      field.id === 'selectedEvent'
+        ? { ...field, options: this.selectOptions() }
+        : field,
+    ),
+  );
 
   ngOnInit(): void {
     this.eventService.load();

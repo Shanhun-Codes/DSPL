@@ -14,6 +14,7 @@ export class EventsService {
   error = this.dataService.error;
 
   readonly events = signal<any[]>([]);
+  readonly staleEvents = signal<any[]>([])
   readonly selectedId = signal<string | null>(null);
   readonly tableRowData = computed(() => this.events());
 
@@ -23,6 +24,7 @@ export class EventsService {
     this.api.getEvents().subscribe({
       next: (list) => {
         this.events.set(list);
+        this.staleEvents.set(list)
         this.isLoading.set(false);
         sessionStorage.setItem(
           'downtown-springfield-poker-events',

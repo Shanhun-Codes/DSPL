@@ -13,10 +13,10 @@ export const HEADER_NAV_CONFIG: HeaderNavItem[] = [
     fragment: 'home',
   },
   {
-    label: 'Tournaments',
+    label: 'Events',
     url: '/',
-    mobileUrl: "/tournaments",
-    fragment: 'tournaments',
+    mobileUrl: "/events",
+    fragment: 'events',
   },
   {
     label: 'Leaderboard',

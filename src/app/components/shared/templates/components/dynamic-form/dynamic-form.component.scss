@@ -13,6 +13,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $cardBackgroundColor;
 }
 
 
@@ -20,6 +21,7 @@ a {
     text-decoration: none;
     font-size: $smallTextSize;
     color: $linkColor;
+    background-color: $cardBackgroundColor;
 }
 
 

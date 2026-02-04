@@ -9,7 +9,7 @@
       [tableHeaders]="tableHeaders"
       [rows]="events()"
       [defs]="defs"
-      (rowClicked)="handleRowClick($event)"
+      [canRowClick]="canRowClick"
     >
     </dspl-table>
   </section>

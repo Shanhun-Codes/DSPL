@@ -19,7 +19,7 @@
           </article>
           <article class="middle">
             <article class="middle-top">
-              <dspl-register-for-event [title]="tableTitles[2].label">
+              <dspl-register-for-event [title]="tableTitles[1].label">
                 <ng-content
                   [isLoading]="isLoading()"
                   [error]="error()"
@@ -27,10 +27,7 @@
               </dspl-register-for-event>
             </article>
             <article class="middle-bottom">
-              <dspl-event-selector
-                id="selector"
-                [title]="tableTitles[1].label"
-              >
+              <dspl-event-selector id="events" [title]="tableTitles[2].label">
                 <ng-content
                   [isLoading]="isLoading()"
                   [error]="error()"
@@ -39,15 +36,15 @@
             </article>
           </article>
           <article class="right">
-            <!-- <dspl-tournaments [title]="'About Us'">
+            <dspl-leaderboard id="event-details" [title]="tableTitles[3].label">
               <ng-content
                 [isLoading]="isLoading()"
                 [error]="error()"
               ></ng-content>
-            </dspl-tournaments> -->
+            </dspl-leaderboard>
           </article>
         </section>
-        </section>
+      </section>
     </body>
     <footer></footer>
   </section>
