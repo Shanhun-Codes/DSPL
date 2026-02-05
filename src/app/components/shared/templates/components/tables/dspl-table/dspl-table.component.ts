@@ -4,6 +4,7 @@ import { DsplCellDef } from '../dspl-table.types';
 import { TableHeader } from '../../../../models/table-header.model';
 import { TablesService } from '../../../tables.service';
 import { RegisterForEventService } from '../../../../../register-for-event/register-for-event.service';
+import { EventsService } from '../../../../../events/events.service';
 
 @Component({
   selector: 'dspl-table',
@@ -16,12 +17,15 @@ import { RegisterForEventService } from '../../../../../register-for-event/regis
 export class DsplTableComponent<T extends Record<string, any>> {
   readonly defs = input<readonly DsplCellDef<T>[] | null>(null);
 
-  readonly canRowClick = input<(row: T) => boolean>(() => true);
+  readonly eventService = inject(EventsService);
 
+  
   readonly tableService = inject(TablesService);
   readonly rfeService = inject(RegisterForEventService);
-
+  
   readonly isClickable = this.tableService.isClickable;
+  readonly canRowClick = input<(row: T) => boolean>(() => false);
+
 
   readonly tableHeaders = input.required<readonly TableHeader<T>[]>();
   readonly rows = input.required<readonly T[]>();
@@ -43,8 +47,7 @@ export class DsplTableComponent<T extends Record<string, any>> {
 
     const id = (row as any)['id'] as string;
     this.rfeService.selectedRowId.set(id);
-
-    // ✅ actually call the function (you were missing ())
+    this.eventService.selectedEventFromTableRowClick.set(row);
     const selected = this.rfeService.showSelectedEventInOptionOnTableRowClick();
     console.log('selected event', selected);
 

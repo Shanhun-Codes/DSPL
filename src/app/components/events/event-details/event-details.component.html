@@ -1,0 +1,85 @@
+<dspl-card-template>
+<!-- event-details-card.component.html -->
+<!-- Bind this card to: readonly rowDetails = this.eventService.selectedEventFromTableRowClick; -->
+
+@if (rowDetails(); as e) {
+  <section class="event-card" [attr.data-event-id]="e.id">
+    <!-- Key for animation reset on row click -->
+    <div class="event-card__inner" [attr.data-key]="e.id">
+      <header class="event-card__header">
+        <div class="event-card__title-wrap">
+          <h2 class="event-card__title">{{ e.name }}</h2>
+          <div class="event-card__meta">
+            <span class="pill pill--status" [class.pill--completed]="e.status === 'completed'">
+              {{ e.status }}
+            </span>
+            <span class="pill">
+              Buy-in: ${{ e.buyIn }}
+            </span>
+            <span class="pill">
+              Players: {{ e.playerCount }} / {{ e.maxPlayers }}
+            </span>
+          </div>
+        </div>
+
+        <div class="event-card__times">
+          <div class="event-card__time">
+            <span class="label">Start</span>
+            <span class="value">{{ e.startAt | date:'EEE, MMM d • h:mm a' }}</span>
+          </div>
+          <div class="event-card__time">
+            <span class="label">End</span>
+            <span class="value">{{ e.endAt | date:'h:mm a' }}</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="event-card__grid">
+        <div class="kv">
+          <span class="label">Host</span>
+          <span class="value">{{ e.hostName }}</span>
+        </div>
+        <div class="kv">
+          <span class="label">Venue</span>
+          <span class="value">{{ e.venueId }}</span>
+        </div>
+        <div class="kv">
+          <span class="label">Blind Structure</span>
+          <span class="value">{{ e.blindStructure }}</span>
+        </div>
+        <div class="kv">
+          <span class="label">Prize Pool</span>
+          <span class="value">${{ e.prizePool }}</span>
+        </div>
+        <div class="kv">
+          <span class="label">Payout</span>
+          <span class="value">{{ e.prizeSummary }}</span>
+        </div>
+
+        @if (e.yourResult) {
+          <div class="result">
+            <div class="result__title">Your Result</div>
+            <div class="result__stats">
+              <div class="stat">
+                <span class="label">Place</span>
+                <span class="value">{{ e.yourResult.place }}</span>
+              </div>
+              <div class="stat">
+                <span class="label">Points</span>
+                <span class="value">{{ e.yourResult.pointsEarned }}</span>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+} @else {
+  <section class="event-card event-card--empty">
+    <div class="event-card__inner">
+      <p class="muted">Select an event to see details.</p>
+    </div>
+  </section>
+}
+
+</dspl-card-template>

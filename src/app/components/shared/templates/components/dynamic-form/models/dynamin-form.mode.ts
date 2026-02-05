@@ -5,10 +5,10 @@ export interface FormFieldConfig {
   type: string;
   placeholder?: string;
   link?: string;
-  click?: any; // fix typing
+  click?: any; // TODO: fix typing
   required?: boolean;
   formGroup: boolean;
   autocomplete?: boolean;
-  loadData?: any; // fix typing
+  loadData?: any; // TODO: fix typing
   options?: {label: string; value:string }[]
 }

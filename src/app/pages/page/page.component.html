@@ -36,12 +36,12 @@
             </article>
           </article>
           <article class="right">
-            <dspl-leaderboard id="event-details" [title]="tableTitles[3].label">
+            <dspl-event-details id="event-details" [title]="tableTitles[3].label">
               <ng-content
                 [isLoading]="isLoading()"
                 [error]="error()"
               ></ng-content>
-            </dspl-leaderboard>
+            </dspl-event-details>
           </article>
         </section>
       </section>

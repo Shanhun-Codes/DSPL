@@ -1,6 +1,6 @@
 import { Component, effect, input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { FormFieldConfig } from './models/dynamin-form.model';
+import { FormFieldConfig } from './models/dynamin-form.mode';
 
 @Component({
   selector: 'dspl-dynamic-form',

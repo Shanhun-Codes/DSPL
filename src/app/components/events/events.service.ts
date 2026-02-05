@@ -14,28 +14,38 @@ export class EventsService {
   error = this.dataService.error;
 
   readonly events = signal<any[]>([]);
-  readonly staleEvents = signal<any[]>([])
+  readonly staleEvents = signal<any[]>([]); // TODO: fix typing
   readonly selectedId = signal<string | null>(null);
   readonly tableRowData = computed(() => this.events());
+
+  readonly selectedEventFromTableRowClick = signal<any>(null);
 
   load() {
     this.isLoading.set(true);
 
     this.api.getEvents().subscribe({
       next: (list) => {
-        this.events.set(list);
-        this.staleEvents.set(list)
-        this.isLoading.set(false);
-        sessionStorage.setItem(
-          'downtown-springfield-poker-events',
-          JSON.stringify(this.events()),
-        );
-        console.log('Events loaded', list);
+  this.events.set(list);
+  this.staleEvents.set(list);
+  this.isLoading.set(false);
 
-        if (this.selectedId() === null && list.length > 0) {
-          this.selectedId.set(list[0].id);
-        }
-      },
+  sessionStorage.setItem(
+    'downtown-springfield-poker-events',
+    JSON.stringify(list),
+  );
+
+  const nextEvent = this.getNextEvent(list);
+
+  if (nextEvent) {
+    this.selectedId.set(nextEvent.id);
+    this.selectedEventFromTableRowClick.set(nextEvent);
+  } else if (list.length > 0) {
+    // fallback if everything is in the past
+    this.selectedId.set(list[0].id);
+    this.selectedEventFromTableRowClick.set(list[0]);
+  }
+},
+
       error: (err) => {
         this.isLoading.set(false);
         this.error.set(err);
@@ -46,6 +56,16 @@ export class EventsService {
     //   this.selectedId.set(id)
     // }
   }
+
+  private getNextEvent(list: any[]) { // TODO: fix typing
+  const now = DateTime.now();
+
+  return list
+    .map(e => ({ e, start: DateTime.fromISO(e.startAt, { setZone: true }) }))
+    .filter(x => x.start.isValid && x.start > now)
+    .sort((a, b) => a.start.toMillis() - b.start.toMillis())[0]?.e ?? null;
+}
+
 
   filterFutureEvents() {
     const allEvents = sessionStorage.getItem(
