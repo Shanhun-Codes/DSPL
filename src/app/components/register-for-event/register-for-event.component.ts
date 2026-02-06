@@ -67,3 +67,9 @@ export function onRegistrationHandler(rawFormGroup: FormGroup): void {
   console.log('INITIAL DATA:', data);
   console.log('ACTUAL DATA:', actualData);
 }
+
+export function onAnchorClickHandler() {
+  const storageKey = 'dspluserissigningupfromleaderboard'
+  const storageValue = "true"
+  localStorage.setItem(storageKey, storageValue)
+}

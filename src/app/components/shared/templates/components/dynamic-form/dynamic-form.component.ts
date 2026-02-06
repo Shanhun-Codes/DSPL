@@ -16,12 +16,10 @@ export class DynamicFormComponent implements OnInit {
   formGroup = new FormGroup({});
 
   constructor() {
-    // ✅ injection context is valid here
     effect(() => {
       const values = this.prefill();
       if (!values) return;
 
-      // only patch keys that actually exist as controls
       const patch: Record<string, any> = {};
       for (const [k, v] of Object.entries(values)) {
         if (this.formGroup.contains(k)) patch[k] = v;
