@@ -1,5 +1,5 @@
 import { FormFieldConfig } from '../../shared/templates/components/dynamic-form/models/dynamin-form.mode';
-import { onAnchorClickHandler, onRegistrationHandler } from '../register-for-event.component';
+import { onRegistrationHandler } from '../register-for-event.component';
 
 export const REGISTER_FOR_EVENT_FORM_CONFIG: FormFieldConfig[] = [
   {
@@ -37,8 +37,7 @@ export const REGISTER_FOR_EVENT_FORM_CONFIG: FormFieldConfig[] = [
       order: 4,
       label: 'Create Username',
       type: 'anchor',
-      link: 'https://downtownspringfieldpoker.netlify.app/',
-      click: onAnchorClickHandler,
+      link: 'https://downtownspringfieldpoker.netlify.app/home/1/sign-up',
       formGroup: false,
     },
 ];
